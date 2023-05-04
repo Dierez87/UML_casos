@@ -1,0 +1,11 @@
+@startuml
+:Ciudadano: as ci
+:Ciudadano extranjero: as ce
+(Registrar entrada) as re
+(Tomar huellas) as th
+
+ci - re
+ce - th
+ci <|-- ce
+re <.. th : <<extend>>
+@enduml
