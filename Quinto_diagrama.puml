@@ -1,0 +1,8 @@
+@startuml
+(Pagar) as UC1
+(Pagar con tarjeta) as UC2
+(Pagar con efectivo) as UC3
+
+UC1 <-- UC2
+UC1 <-- UC3
+@enduml
