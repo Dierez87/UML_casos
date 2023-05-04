@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+:new Actor: as na
+(Identificarse) as id
+(Pagar) as pa
+(Elegir mensajero) as em
+(Confirmar) as co
+(Registrarse) as re
+(Pagar con tarjeta) as pta
+(Pagar con transferencia) as ptr
+
+na -- id
+na -- pa
+na -- co
+na -- em
+id <.. re : <<extend>>
+pa <|-- pta
+pa <|-- ptr
+@enduml

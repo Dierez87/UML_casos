@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+:Cliente: as cl
+(Meter dinero) as md
+(Pedir azucar) as pa
+(Pedir Producto) as pp
+(Cancelar) as ca
+(Devolver dinero) as dd
+
+cl -- md
+cl -- pa
+cl -- pp
+cl -- ca
+pp ..> dd : <<include>>
+ca ..> dd : <<include>>
+@enduml
