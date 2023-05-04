@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+rectangle {
+ (Mostrar menú) as UC1
+ (Pedir Comida) as UC2
+}
+:cliente: as fc
+:Restaurante: as fc2
+(Entregar comida) as UC3
+
+UC1 -- fc2
+fc -- UC1
+fc -- UC2
+fc2 - UC3
+
+@enduml
