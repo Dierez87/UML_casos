@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+:cliente: as fc
+(Confirmar pedido) as UC1
+(Cancelar pedido) as UC2
+(devolver cambio) as UC3
+
+fc -- UC1
+fc -- UC2
+UC1 ..> UC3 : <<include>>
+UC2 ..> UC3 : <<include>>
+@enduml
