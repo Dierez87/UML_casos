@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+:Usuario: as us
+:Administrador: as ad
+(Iniciar sesion) as iS
+(Recuperar contraseña) as rc
+(Modificar contraseña) as mc
+(Cerrar sesion) as cs
+(Registrar usuario) as ru
+(Instalar programa) as ip
+
+us -- iS
+us -- rc
+us -- mc
+us -- cs
+
+us <|- ad
+ad -- ru
+ad -- ip
+@enduml
